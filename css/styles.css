@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page-header {
+    background-color: white;
+    max-height: 100%;
+    padding: 10px;
+    position: fixed; 
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(94, 92, 92); 
+    right: 0;
+    left: 0;
+}
+#header {
+    padding: 90px 10px 40px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background-color: rgb(244, 226, 229); 
+    font-weight: 300;
+    font-style: italic;
+}
+.section {
+    height: 50vh;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+li {
+   list-style: none;
+}
+ a {
+     text-decoration: none;
+     text-transform: uppercase;
+ }
+
+.page-header ul li a.active {
+    background: lightblue;
+}
+
+.page-header ul li:hover a {
+    background: lightblue;
+}
+
+.section1, .section2, .section3, .section4 {
+min-height: 50vh; 
+display: flex;
+justify-content: center;
+}
+  
