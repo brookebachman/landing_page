@@ -3,7 +3,11 @@ const about = document.getElementById("about");
 const contact = document.getElementById("contact");
 const socials = document.getElementById("socials");
 const extra = document.getElementById("extra");
-
+//I put an event listener on the navigation container, this is easier and more dry than creating a new event listener for each button
+ //Then I grab the link elements on the page
+ //Next I look to see what link matches what was clicked
+ //Once I find which link was clicked then I want to take the section that matches that link and scroll it to the top view of the page
+ //I used setTimeout to allow me to essentially unclick the link after 2 seconds so that the user can click a new link and only the newest link they clicked is highlighted
 
 nav.addEventListener("click", function(event){
     console.log(event.target)
