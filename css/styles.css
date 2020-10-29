@@ -50,18 +50,13 @@ li {
 min-height: 70vh; 
 display: flex;
 justify-content: center;
-border: 2px solid lightpink;
+border-top: 5px dotted lightpink;
 padding: 30px;
-}
-  
-#content {
-    border: 2px solid pink;
-    
 }
 
 img {
-    height: 264px;
-    width: 365px;
+    height: 250px;
+    width: 340px;
     text-align: center;
 }
 
@@ -72,4 +67,12 @@ img {
     padding: 0px 35px;
     text-align: center;
     font-size: 1.1em;
+}
+
+#contact1 {
+    
+}
+
+.card {
+    border: none !important;
 }
