@@ -11,7 +11,7 @@ body, html {
     position: fixed; 
     font-weight: 300;
     font-size: 18px;
-    color: rgb(94, 92, 92); 
+    color:black; 
     right: 0;
     left: 0;
 }
@@ -47,8 +47,29 @@ li {
 }
 
 .section1, .section2, .section3, .section4 {
-min-height: 50vh; 
+min-height: 70vh; 
 display: flex;
 justify-content: center;
+border: 2px solid lightpink;
+padding: 30px;
 }
   
+#content {
+    border: 2px solid pink;
+    
+}
+
+img {
+    height: 264px;
+    width: 365px;
+    text-align: center;
+}
+
+#caption {
+    font-size: .8em;
+}
+#art1 {
+    padding: 0px 35px;
+    text-align: center;
+    font-size: 1.1em;
+}
