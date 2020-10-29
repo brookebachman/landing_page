@@ -9,20 +9,27 @@ nav.addEventListener("click", function(event){
     if (currentId === "about"){
         let el = document.getElementById("about1")
         el.scrollIntoView(true);
-        about.style.cssText = "background-color: rgb(244, 226, 229, .8); color: pink;"
+        about.style.cssText = "background-color: rgb(244, 226, 229, .8);"
+        setTimeout(unClick(about),2000)
         
     } else if (currentId === "contact"){
         let el = document.getElementById("contact1")
         el.scrollIntoView(true);
-        contact.style.cssText = "background-color: rgb(244, 226, 229, .8); color: white;"
-        
+        contact.style.cssText = "background-color: rgb(244, 226, 229, .8);"
+        setTimeout(unClick(contact),2000)
     } else if (currentId === "socials"){
         let el = document.getElementById("socials1")
         el.scrollIntoView(true);
-        socials.style.cssText = "background-color: rgb(244, 226, 229, .8); color: white;"
+        socials.style.cssText = "background-color: rgb(244, 226, 229, .8);"
+        setTimeout(unClick(socials),2000)
      }
-    //document.getElementById("contact").scrollIntoView({behavior: 'smooth'});
+
 })
+
+function unClick(current){
+    current.style.cssText = "background-color: black"
+
+}
 
 let slideIndex = 1;
 showSlides(slideIndex);
