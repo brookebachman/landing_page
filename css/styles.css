@@ -40,11 +40,10 @@ li {
    text-decoration: none;
 }
 li:hover {
-    background: white;
-    color: black;
+    font-weight: 700;
+    color: rgb(244, 226, 229) ;
 }
  
-
 .page-header ul li a.active {
     background: lightblue;
 }
@@ -53,12 +52,20 @@ li:hover {
     background: lightblue;
 }
 
- .section3, .section4 {
-min-height: 70vh; 
-display: flex;
-justify-content: center;
-border-top: 7px dotted rgb(244, 226, 229);
-padding: 30px;
+ .section3{
+    min-height: 70vh; 
+    display: flex;
+    justify-content: center;
+    border-top: 7px dotted rgb(244, 226, 229);
+    padding: 30px;
+}
+
+.section4 {
+    min-height: 40vh; 
+    display: flex;
+    justify-content: center;
+    border-top: 7px dotted rgb(244, 226, 229);
+    padding: 30px;
 }
 
 img {
