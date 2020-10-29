@@ -14,6 +14,7 @@ body, html {
     color:black; 
     right: 0;
     left: 0;
+    overflow-y: auto;
 }
 #header {
     padding: 90px 10px 40px 10px;
@@ -31,10 +32,7 @@ ul {
 li {
    list-style: none;
 }
- a {
-     text-decoration: none;
-     text-transform: uppercase;
- }
+ 
 
 .page-header ul li a.active {
     background: lightblue;
@@ -78,6 +76,7 @@ img {
 
 .card {
     border: none !important;
+    text-align: center;
 }
 
 .btn {
@@ -93,7 +92,7 @@ img {
     padding-bottom: 30px;
 }
 
-{box-sizing:border-box}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -170,8 +169,8 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
+/* Fading animation */ */
+ .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -186,4 +185,36 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+ padding: 20px;
+  font-size: 50px !important;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px;
+  border-radius: 50%;
+
+}
+
+.fa-github {
+    background: rgb(244, 226, 229);
+    color: white;
+}
+.fa-linkedin {
+    background: rgb(244, 226, 229);
+    color: white;
+}
+.fa-youtube {
+    background:rgb(244, 226, 229);
+    color: white;
+}
+
+#socials1 {
+    text-align: center;
 }
