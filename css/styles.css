@@ -60,19 +60,37 @@ img {
     text-align: center;
 }
 
+#pink {
+    height: 300px;
+    width: 300px;
+}
 #caption {
     font-size: .8em;
 }
 #art1 {
-    padding: 0px 35px;
+    padding: 0px 5px;
     text-align: center;
     font-size: 1.1em;
 }
 
-#contact1 {
-    
+#pic-div{
+    padding-top: 40px;
+    text-align: center;
 }
 
 .card {
     border: none !important;
+}
+
+.btn {
+    background-color: lightpink !important;
+}
+
+#aboutme {
+    text-align: center;
+}
+
+#form {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
