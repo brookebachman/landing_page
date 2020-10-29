@@ -2,6 +2,8 @@ const nav = document.getElementById('page-header')
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
 const socials = document.getElementById("socials");
+const extra = document.getElementById("extra");
+
 
 nav.addEventListener("click", function(event){
     console.log(event.target)
@@ -22,6 +24,12 @@ nav.addEventListener("click", function(event){
         el.scrollIntoView(true);
         socials.style.cssText = "background-color: rgb(244, 226, 229, .8);"
         setTimeout(unClick(socials),2000)
+     }
+     else if (currentId === "extra"){
+        let el = document.getElementById("extras1")
+        el.scrollIntoView(true);
+        extra.style.cssText = "background-color: rgb(244, 226, 229, .8);"
+        setTimeout(unClick(extra),2000)
      }
 
 })
