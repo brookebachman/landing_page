@@ -14,24 +14,24 @@ nav.addEventListener("click", function(event){
     let currentId = event.target.id
     if (currentId === "about"){
         let el = document.getElementById("about1")
-        el.scrollIntoView(true);
+        el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         about.style.cssText = "background-color: rgb(244, 226, 229, .8);"
         setTimeout(unClick(about),2000)
         
     } else if (currentId === "contact"){
         let el = document.getElementById("contact1")
-        el.scrollIntoView(true);
+        el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         contact.style.cssText = "background-color: rgb(244, 226, 229, .8);"
         setTimeout(unClick(contact),2000)
     } else if (currentId === "socials"){
         let el = document.getElementById("socials1")
-        el.scrollIntoView(true);
+        el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         socials.style.cssText = "background-color: rgb(244, 226, 229, .8);"
         setTimeout(unClick(socials),2000)
      }
      else if (currentId === "extra"){
         let el = document.getElementById("extras1")
-        el.scrollIntoView(true);
+        el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         extra.style.cssText = "background-color: rgb(244, 226, 229, .8);"
         setTimeout(unClick(extra),2000)
      }
