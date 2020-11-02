@@ -124,4 +124,7 @@ scroll-behavior: smooth;
             justify-self: center;
             padding: 40px;
         }
+        li:active {
+            
+        }
 }

@@ -43,6 +43,12 @@ li:hover {
     font-weight: 500;
     color: rgb(244, 226, 229) ;
 }
+
+li:active {
+    font-weight: 500;
+    color: rgb(244, 226, 229) ;
+
+}
  
 .page-header ul li a.active {
     background: lightblue;
