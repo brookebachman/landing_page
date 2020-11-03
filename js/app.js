@@ -1,14 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-
   addLi();
-
-
-
   const nav = document.getElementById('page-header');
-  // const about = document.getElementById('about');
-  // const contact = document.getElementById('contact');
-  // const socials = document.getElementById('socials');
-  // const extra = document.getElementById('extra');
+
   //I put an event listener on the navigation container, this is easier and more dry than creating a new event listener for each button
 //Then I grab the link elements on the page
 //Next I look to see what link matches what was clicked
@@ -21,51 +14,71 @@ document.addEventListener('DOMContentLoaded', (event) => {
     while (i <= 4){
       let li = document.createElement('li');
       ul.appendChild(li);
-
     }
-
   }
-
-
-
-
   nav.addEventListener('click', function (event) {
     console.log(event.target);
     let currentId = event.target.id;
-    if (currentId === 'about') {
-      let el = document.getElementById('about1');
-      el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
-    //  about.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
-      // el.style.cssText = 'border: 15px solid lightgray';
-      //setTimeout(unClick(about), 2000);
+    if (currentId === 'About') {
+      let currentSection = document.getElementById('About');
+      currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+      about.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
+       //currentSection.style.cssText = 'border: 15px solid lightgray';
+      setTimeout(unClick(about), 2000);
     } else if (currentId === 'contact') {
-      let el = document.getElementById('contact1');
-      el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+      let currentSection = document.getElementById('Contact');
+      currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       //contact.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
-      // el.style.cssText = 'border: 15px solid lightgray';
-      //setTimeout(unClick(contact), 2000);
+      // currentSection.style.cssText = 'border: 15px solid lightgray';
+      setTimeout(unClick(contact), 2000);
     } else if (currentId === 'socials') {
-      let el = document.getElementById('socials1');
-      el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
-      //socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
-      // el.style.cssText = 'border: 15px solid lightgray';
-      //setTimeout(unClick(socials), 2000);
+      let currentSection = document.getElementById('Socials');
+      currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+      socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
+      //currentSection.style.cssText = 'border: 15px solid lightgray';
+      setTimeout(unClick(socials), 2000);
     } else if (currentId === 'extra') {
-      let el = document.getElementById('extras1');
-      el.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
-    //  extra.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
-      // el.style.cssText = 'border: 15px solid lightgray';
-      //setTimeout(unClick(extra), 2000);
+      let currentSection = document.getElementById('Bonus');
+      currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+      extra.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
+      //currentSection.style.cssText = 'border: 15px solid lightgray';
+      setTimeout(unClick(extra), 2000);
     }
   });
-
 })
+function unClick(current) {
+	current.style.cssText = 'background-color: black';
+}
+const navbarMenu = document.getElementById("links");
+//select sections
+const sections = document.querySelectorAll("section");
+//build a nav
+function createNav(){
+  // for (let item of sections){
+  //   let section = document.createElement("li");
+  //   section.className = "menu__link";
+  //   section.innerText = item.id;
+  //   navbarMenu.appendChild(section);
 
-// function unClick(current) {
-// 	current.style.cssText = 'background-color: black';
-// }
+    for (let i = 0; i < 4; i++){
+      let section = document.createElement("li");
+      section.className = "menu__link";
+      section.id = i;
+      navbarMenu.appendChild(section);
+      
+    
+  };  
+};
+createNav();
 
-
+const about = document.getElementById('0');
+const contact = document.getElementById('1');
+const socials = document.getElementById("2");
+const extra = document.getElementById('3');
+about.innerText = "About";
+contact.innerText = "Contact";
+socials.innerText = "Socials";
+extra.innerText = "Bonus Content";
 
 
 // Thumbnail image controls
