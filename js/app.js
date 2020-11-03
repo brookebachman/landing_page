@@ -20,25 +20,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log(event.target);
     let currentId = event.target.id;
     if (currentId === 'About') {
-      let currentSection = document.getElementById('About');
+      let currentSection = about;
       currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       about.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
        //currentSection.style.cssText = 'border: 15px solid lightgray';
       setTimeout(unClick(about), 2000);
     } else if (currentId === 'contact') {
-      let currentSection = document.getElementById('Contact');
+      let currentSection = contact;
       currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       //contact.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
       // currentSection.style.cssText = 'border: 15px solid lightgray';
       setTimeout(unClick(contact), 2000);
     } else if (currentId === 'socials') {
-      let currentSection = document.getElementById('Socials');
+      let currentSection = socials;
       currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
       //currentSection.style.cssText = 'border: 15px solid lightgray';
       setTimeout(unClick(socials), 2000);
     } else if (currentId === 'extra') {
-      let currentSection = document.getElementById('Bonus');
+      let currentSection = extra;
       currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       extra.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
       //currentSection.style.cssText = 'border: 15px solid lightgray';
