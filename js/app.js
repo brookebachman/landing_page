@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log(event.target);
     let currentId = event.target.id;
     if (currentId === '0') {
-      let currentSection = document.getElementById("About");
+      let currentSection = document.getElementById("about");
       currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
       about.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
        //currentSection.style.cssText = 'border: 15px solid lightgray';
