@@ -39,14 +39,6 @@ nav.addEventListener('click', function (event) {
     socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
    // currentSection.style.cssText = 'border: 15px solid lightgray';
     setTimeout(unClick(socials), 2000);
-    
-  // } else if (currentId === '3') {
-  //   let currentSection = document.getElementById("bonus");
-  //   currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
-  //   extra.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
-  //   //currentSection.style.cssText = 'border: 15px solid lightgray';
-  //   setTimeout(unClick(extra), 2000);
-  // }
 }});
 function unClick(current) {
   current.style.cssText = 'background-color: black';
