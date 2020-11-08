@@ -273,3 +273,15 @@ img {
     padding: 20px;
     margin: 20px;
 }
+
+#video {
+    width: 350vw;
+    height: 200vh;
+}
+
+@media (min-width: 700px ){
+    #video {
+        width: 500vw;
+        height: 300vh;
+    }
+}
