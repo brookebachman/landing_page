@@ -39,7 +39,12 @@ nav.addEventListener('click', function (event) {
     socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
    // currentSection.style.cssText = 'border: 15px solid lightgray';
     setTimeout(unClick(socials), 2000);
-}});
+} else if (currentId === '3'){
+  let currentSection = document.getElementById("bonus");
+  currentSection.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+  socials.style.cssText = 'background-color: rgb(244, 226, 229, .8);';
+}
+});
 function unClick(current) {
   current.style.cssText = 'background-color: black';
 }
@@ -49,7 +54,7 @@ const navbarMenu = document.getElementById("links");
 const sections = document.querySelectorAll("section");
 //build a nav
 function createNav(){
-    for (let i = 0; i < 3; i++){
+    for (let i = 0; i < 4; i++){
       let section = document.createElement("li");
       section.id = i;
       navbarMenu.appendChild(section);
@@ -61,8 +66,8 @@ createNav();
 const about = document.getElementById('0');
 const contact = document.getElementById('1');
 const socials = document.getElementById("2");
-// const extra = document.getElementById('3');
+const extra = document.getElementById('3');
 about.innerText = "About";
 contact.innerText = "Contact";
 socials.innerText = "Socials";
-// extra.innerText = "Bonus Content";
+extra.innerText = "Bonus Content";
